@@ -11,8 +11,6 @@ img {
 
 /* VARIABLES */
 :root {
-	
-
 	--color-green: #c6f6d5;
 	--color-green-dark: #38a169;
 
@@ -39,15 +37,10 @@ img {
 
 	--color-white: #fff;
 	--color-black: #2f2e41;
-
-
 }
-
 
 * {
 	box-sizing: border-box;
-
-
 }
 
 html {
@@ -84,6 +77,9 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--color-tertiary-dark);
+}
+.mid-section {
+	display: flex;
 }
 
 @media only screen and (max-width: 800px) {

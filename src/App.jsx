@@ -1,5 +1,6 @@
 import './App.css';
 import './Components/Header/Header.css';
+import TaskList from './Components/MainSection/TaskList/TaskList';
 import Sidebar from './Components/Sidebar/Sidebar';
 function Header() {
 	return (
@@ -14,7 +15,10 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Sidebar />
+			<div className="mid-section">
+				<Sidebar />
+				<TaskList />
+			</div>
 		</div>
 	);
 }
