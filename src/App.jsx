@@ -2,6 +2,7 @@ import './App.css';
 import './Components/Header/Header.css';
 import TaskList from './Components/MainSection/TaskList/TaskList';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Timer from './Components/Timer/Timer';
 function Header() {
 	return (
 		<div className="header-container">
@@ -18,6 +19,7 @@ function App() {
 			<div className="mid-section">
 				<Sidebar />
 				<TaskList />
+				<Timer />
 			</div>
 		</div>
 	);
