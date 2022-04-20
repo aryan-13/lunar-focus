@@ -1,7 +1,7 @@
 .sidebar-container {
 	display: flex;
 	flex-direction: column;
-	background-color: lightblue;
+	background-color: var(--color-white);
 	margin: 1.5rem;
 	width: fit-content;
 	padding: 2rem 1rem;
@@ -20,5 +20,18 @@
 	color: white;
 	border-radius: 1rem;
 	margin: 1rem;
-	background-color: lightgreen;
+	cursor: pointer;
+	/* background-color: lightgreen; */
+}
+.option-1 {
+	background-color: var(--color-option-pink);
+}
+.option-4 {
+	background-color: var(--color-option-green);
+}
+.option-3 {
+	background-color: var(--color-option-blue);
+}
+.option-2 {
+	background-color: var(--color-option-purple);
 }
