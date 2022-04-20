@@ -1,0 +1,24 @@
+.sidebar-container {
+	display: flex;
+	flex-direction: column;
+	background-color: lightblue;
+	margin: 1.5rem;
+	width: fit-content;
+	padding: 2rem 1rem;
+	justify-content: center;
+	align-items: space-between;
+	height: fit-content;
+	border-radius: 1rem;
+}
+.sidebar-items {
+	display: flex;
+	text-align: center;
+	row-gap: 1rem;
+	font-size: 2rem;
+	flex-direction: column;
+	padding: 2rem 1rem;
+	color: white;
+	border-radius: 1rem;
+	margin: 1rem;
+	background-color: lightgreen;
+}
