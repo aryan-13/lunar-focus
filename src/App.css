@@ -14,24 +14,13 @@ img {
 
 /* VARIABLES */
 :root {
-	--color-green: #c6f6d5;
-	--color-green-dark: #38a169;
+	--color-option-purple: #d5cae5;
+	--color-option-pink: #f592b3;
+	--color-option-green: #96dab5;
+	--color-option-blue: #92d3ff;
+	--color-font: #3e4152;
 
-	--color-blue: #bee3f8;
-	--color-blue-dark: #3182ce;
-
-	--color-yellow: #feebc8;
-	--color-yellow-dark: #dd6b20;
-
-	--color-font-primary: #3e4152;
-
-	--color-secondary-light: #ffb900;
-	--color-secondary-dark: #ff7730;
-
-	--color-tertiary-light: #2998ff;
-	--color-tertiary-dark: #5643fa;
-
-	--color-grey-light-1: #f7f7f7;
+	--color-grey-light-1: #f3f4f6;
 	--color-grey-light-2: #eee;
 
 	--color-grey-dark: #777;
@@ -54,6 +43,7 @@ a {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: #f0f6fb;
 }
 
 /* width */

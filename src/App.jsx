@@ -6,7 +6,7 @@ import Timer from './Components/Timer/Timer';
 function Header() {
 	return (
 		<div className="header-container">
-			<h4 className="header-text">Lunar Focus</h4>
+			<h4 className="header-text">🌻 Lunar Focus</h4>
 			<h5 className="header-date">20th April, 2022</h5>
 		</div>
 	);

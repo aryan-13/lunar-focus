@@ -2,5 +2,7 @@
 	padding: 2rem 1rem;
 	margin: 1.5rem;
 	border-radius: 1rem;
-	background-color: orange;
+	width: 100%;
+	font-size: 3rem;
+	background-color: var(--color-white);
 }
