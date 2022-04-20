@@ -4,6 +4,9 @@
 	margin: 0;
 	padding: 0;
 }
+* {
+	box-sizing: border-box;
+}
 
 img {
 	width: 100%;
@@ -37,10 +40,6 @@ img {
 
 	--color-white: #fff;
 	--color-black: #2f2e41;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 html {
