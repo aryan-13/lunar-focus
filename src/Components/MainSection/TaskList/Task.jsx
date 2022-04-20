@@ -1,19 +1,38 @@
-import React from 'react';
+import { useTasklist } from '../../../Context/tasklist-context';
 
-function Task() {
+function Task({ task }) {
+	const { tasklistDispatch } = useTasklist();
+
 	return (
-		<div className="task task-pending">
-			<input
-				className="task-checkbox"
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1">
+		<div
+			className={
+				task.isCompleted === false ? 'task task-pending' : 'task task-completed'
+			}
+		>
+			{task.isCompleted ? (
+				<div></div>
+			) : (
+				<input
+					className="task-checkbox"
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+					onChange={() =>
+						tasklistDispatch({ type: 'TASK_COMPLETED', payload: task })
+					}
+				/>
+			)}
+			<label className="task-text" for="vehicle1">
 				{' '}
-				I have to complete my homeworkI have to complete my homework
+				{task.name}
 			</label>
+			<div
+				className="delete-btn"
+				onClick={() => tasklistDispatch({ type: 'DELETE_TASK', payload: task })}
+			>
+				<i className="fas fa-times "></i>
+			</div>
 		</div>
 	);
 }

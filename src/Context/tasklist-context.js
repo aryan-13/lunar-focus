@@ -4,14 +4,18 @@ import { tasklistReducer } from '../Reducer/tasklistReducer';
 const TasklistContext = createContext();
 
 let initTasklist = {
-	tasklist: [],
+	tasklistArr: [],
+	completedTasks: [],
 	taskPending: 0,
 	tasksCompleted: 0,
 };
 const TasklistProvider = ({ children }) => {
-	const [tasklist, dispatch] = useReducer(tasklistReducer, initTasklist);
+	const [tasklist, tasklistDispatch] = useReducer(
+		tasklistReducer,
+		initTasklist
+	);
 	return (
-		<TasklistContext.Provider value={(tasklist, dispatch)}>
+		<TasklistContext.Provider value={{ tasklist, tasklistDispatch }}>
 			{children}
 		</TasklistContext.Provider>
 	);
