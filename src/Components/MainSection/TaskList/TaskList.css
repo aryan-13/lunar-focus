@@ -1,5 +1,5 @@
 .main-section-container {
-	padding: 2rem;
+	padding: 2rem 1rem;
 	margin: 1rem;
 	border-radius: 1rem;
 	background-color: var(--color-white);
@@ -10,9 +10,9 @@
 .task-container {
 	padding: 0 1rem 2rem 1rem;
 	margin: 1.5rem;
-	height: 30rem;
-	max-width: 40rem;
-	width: 30rem;
+	height: 32rem;
+	max-width: 28rem;
+	width: 28rem;
 	border-radius: 5px;
 	background-color: var(--color-grey-light-1);
 	overflow-y: auto;
@@ -34,6 +34,10 @@
 	font-size: 1.4rem;
 	margin: 1rem 0;
 }
+.task-text {
+	overflow: hidden;
+	padding: 0 1rem 0 0;
+}
 .task-pending {
 	background-color: #d1fae5;
 	border: 2px solid #a7f3d0;
@@ -45,8 +49,8 @@
 }
 .task-checkbox {
 	margin-right: 1rem;
-	width: 3rem;
-	height: 3rem;
+	width: 1.5rem;
+	height: 1.5rem;
 }
 .task-count {
 	background-color: white;
@@ -60,7 +64,7 @@
 	background-color: #f3f4f6;
 	border-radius: 3px;
 	border: none;
-	width: 80%;
+	width: 70%;
 	padding: 1.3rem 2rem;
 	margin: 1rem 1.5rem;
 }
@@ -70,4 +74,10 @@
 	border: none;
 	padding: 1.3rem 2.3rem;
 	margin: 1rem 1.5rem;
+}
+.delete-btn {
+	margin-left: auto;
+	font-size: inherit;
+	cursor: pointer;
+	padding-right: 5px;
 }
