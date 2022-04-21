@@ -9,9 +9,7 @@ function Task({ task }) {
 				task.isCompleted === false ? 'task task-pending' : 'task task-completed'
 			}
 		>
-			{task.isCompleted ? (
-				<div></div>
-			) : (
+			{!task.isCompleted && (
 				<input
 					className="task-checkbox"
 					type="checkbox"

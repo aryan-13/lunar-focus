@@ -6,7 +6,6 @@ import { useTasklist } from '../../../Context/tasklist-context';
 function TaskList() {
 	const [task, setTask] = useState('');
 	const { tasklist, tasklistDispatch } = useTasklist();
-	console.log('tasklist', tasklist);
 	const taskHandler = (e) => {
 		if (e.target.value.length > 25) {
 			alert('Task cannot be more than 25 characters');
@@ -25,7 +24,6 @@ function TaskList() {
 			<button
 				className="btn"
 				onClick={() => {
-					console.log('Curr task:', task);
 					tasklistDispatch({
 						type: 'ADD_TASK',
 						payload: { id: uuidv4(), name: task, isCompleted: false },

@@ -1,6 +1,5 @@
 const tasklistReducer = (state, action) => {
 	const addTask = (state, task) => {
-		console.log('from dispatch: ', state.tasklistArr);
 		return {
 			...state,
 			tasklistArr: [...state.tasklistArr, task],
