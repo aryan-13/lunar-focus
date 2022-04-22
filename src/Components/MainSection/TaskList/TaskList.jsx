@@ -21,6 +21,7 @@ function TaskList() {
 				className="input-bar"
 				placeholder="Click to quickly add a task"
 				onChange={(e) => taskHandler(e)}
+				value={task}
 			/>
 			<button
 				className="btn btn-grey"
@@ -29,6 +30,7 @@ function TaskList() {
 						type: 'ADD_TASK',
 						payload: { id: uuidv4(), name: task, isCompleted: false },
 					});
+					setTask('');
 				}}
 			>
 				Add

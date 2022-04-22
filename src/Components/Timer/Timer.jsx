@@ -2,16 +2,6 @@ import './Timer.css';
 import { useState } from 'react';
 import { useTimer } from '../../Context/timer-context';
 import Clock from './Clock';
-const children = ({ remainingTime }) => {
-	const minutes = Math.floor((remainingTime % 3600) / 60);
-	const seconds = remainingTime % 60;
-
-	return (
-		<div className="timevalue">
-			{minutes}:{seconds}
-		</div>
-	);
-};
 
 function Timer() {
 	const { timerDispatch } = useTimer();
