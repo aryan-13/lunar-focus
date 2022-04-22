@@ -1,4 +1,5 @@
 import './TaskList.css';
+import '../../../common.css';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Task from './Task';
@@ -22,7 +23,7 @@ function TaskList() {
 				onChange={(e) => taskHandler(e)}
 			/>
 			<button
-				className="btn"
+				className="btn btn-grey"
 				onClick={() => {
 					tasklistDispatch({
 						type: 'ADD_TASK',
