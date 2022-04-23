@@ -14,11 +14,16 @@ img {
 
 /* VARIABLES */
 :root {
+	--color-primary: #5271ff;
+
 	--color-option-purple: #d5cae5;
 	--color-option-pink: #f592b3;
 	--color-option-green: #96dab5;
 	--color-option-blue: #92d3ff;
-	--color-font: #3e4152;
+	--color-font: #374151;
+
+	/* Btn Colors */
+	--color-grey: #f3f4f6;
 
 	--color-grey-light-1: #f3f4f6;
 	--color-grey-light-2: #eee;
@@ -44,6 +49,7 @@ a {
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #f0f6fb;
+	color: var(--color-font);
 }
 
 /* width */

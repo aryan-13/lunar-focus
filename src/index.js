@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TasklistProvider } from './Context/tasklist-context';
+import { TimerProvider } from './Context/timer-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<TasklistProvider>
-			<App />
+			<TimerProvider>
+				<App />
+			</TimerProvider>
 		</TasklistProvider>
 	</React.StrictMode>
 );

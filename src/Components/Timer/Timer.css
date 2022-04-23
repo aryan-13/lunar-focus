@@ -5,4 +5,43 @@
 	width: 100%;
 	font-size: 3rem;
 	background-color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.timer-header {
+	font-weight: 600;
+}
+.timer {
+	margin-top: 3rem;
+}
+.timevalue {
+	font-size: 6.5rem;
+	font-weight: bold;
+}
+.btn-container {
+	display: flex;
+	column-gap: 1rem;
+	margin-top: 3.2rem;
+}
+.tab-container {
+	display: flex;
+	column-gap: 3rem;
+	margin-top: 1.5rem;
+}
+.tab {
+	padding: 1.6rem 5rem;
+	cursor: pointer;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 2rem;
+	border: none;
+}
+.tab-break {
+	background-color: #a7f3d0;
+	color: #34d399;
+}
+.tab-work {
+	color: #fa5d5c;
+	background-color: #fecaca;
 }

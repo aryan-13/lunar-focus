@@ -61,20 +61,14 @@
 
 /* INPUT BAR */
 .input-bar {
-	background-color: #f3f4f6;
+	background-color: var(--color-grey);
 	border-radius: 3px;
 	border: none;
 	width: 70%;
 	padding: 1.3rem 2rem;
 	margin: 1rem 1.5rem;
 }
-.btn {
-	background-color: #f3f4f6;
-	border-radius: 3px;
-	border: none;
-	padding: 1.3rem 2.3rem;
-	margin: 1rem 1.5rem;
-}
+
 .delete-btn {
 	margin-left: auto;
 	font-size: inherit;
