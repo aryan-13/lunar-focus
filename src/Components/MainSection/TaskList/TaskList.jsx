@@ -15,6 +15,13 @@ function TaskList() {
 			setTask(e.target.value);
 		}
 	};
+	const addTask = () => {
+		tasklistDispatch({
+			type: 'ADD_TASK',
+			payload: { id: uuidv4(), name: task, isCompleted: false },
+		});
+		setTask('');
+	};
 	return (
 		<div className="main-section-container">
 			<input
@@ -23,16 +30,7 @@ function TaskList() {
 				onChange={(e) => taskHandler(e)}
 				value={task}
 			/>
-			<button
-				className="btn btn-grey"
-				onClick={() => {
-					tasklistDispatch({
-						type: 'ADD_TASK',
-						payload: { id: uuidv4(), name: task, isCompleted: false },
-					});
-					setTask('');
-				}}
-			>
+			<button className="btn btn-grey" onClick={() => addTask()}>
 				Add
 			</button>
 			<div className="task-list-container">
