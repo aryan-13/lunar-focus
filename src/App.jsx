@@ -1,8 +1,10 @@
 import './App.css';
 import './Components/Header/Header.css';
+import { Routes, Route } from 'react-router-dom';
 import TaskList from './Components/MainSection/TaskList/TaskList';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Timer from './Components/Timer/Timer';
+import Notes from './Components/MainSection/Notes/Notes';
 function Header() {
 	return (
 		<div className="header-container">
@@ -18,7 +20,11 @@ function App() {
 			<Header />
 			<div className="mid-section">
 				<Sidebar />
-				<TaskList />
+				<Routes>
+					<Route path="/" element={<TaskList />} />
+					<Route path="/notes" element={<Notes />} />
+				</Routes>
+
 				<Timer />
 			</div>
 		</div>
