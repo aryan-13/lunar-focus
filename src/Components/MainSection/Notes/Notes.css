@@ -1,6 +1,9 @@
 .notes-container {
 	padding: 1rem 2rem;
 	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	/* width: inherit; */
 }
 .notes-heading {
 	padding: 1rem 0 2rem 0;
@@ -18,7 +21,7 @@
 .notes-input {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	border-top: 4px solid var(--color-primary);
+	border-top: 4px solid #1da3f7;
 	padding: 1rem 1rem;
 	height: 15rem;
 	appearance: none;
@@ -34,21 +37,29 @@
 	overflow-y: auto;
 	min-height: 46rem;
 	width: 60rem;
+	width: 60rem;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 .note-component {
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
 	border: 1px solid black;
 	padding: 1rem;
 	width: 25rem;
-	display: flex;
-	margin: 1rem;
-	min-height: 17rem;
+	margin: 2rem;
+	justify-content: space-between;
 	font-size: 1.6rem;
 }
 .note-icon {
+	margin-left: auto;
 	align-self: flex-end;
 	cursor: pointer;
+}
+.note-text {
+	/* overflow-wrap: break-word; */
+	word-wrap: break-word;
+	width: 22rem;
 }
