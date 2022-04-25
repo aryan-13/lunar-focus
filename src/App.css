@@ -51,6 +51,11 @@ body {
 	background-color: #f0f6fb;
 	color: var(--color-font);
 }
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
 
 /* width */
 ::-webkit-scrollbar {

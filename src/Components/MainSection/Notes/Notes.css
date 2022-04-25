@@ -1,0 +1,54 @@
+.notes-container {
+	padding: 1rem 2rem;
+	height: 85vh;
+}
+.notes-heading {
+	padding: 1rem 0 2rem 0;
+	width: 60rem;
+	text-align: center;
+	font-size: 2.5rem;
+}
+.note-box {
+	display: flex;
+	max-height: 20rem;
+	width: 100%;
+	margin: 0 1rem;
+	flex-direction: column;
+}
+.notes-input {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top: 4px solid var(--color-primary);
+	padding: 1rem 1rem;
+	height: 15rem;
+	appearance: none;
+	font-size: 1.6rem;
+	resize: none;
+}
+.btn-notes {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.user-notes {
+	overflow-y: auto;
+	min-height: 46rem;
+	width: 60rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.note-component {
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 1rem;
+	width: 25rem;
+	display: flex;
+	margin: 1rem;
+	min-height: 17rem;
+	font-size: 1.6rem;
+}
+.note-icon {
+	align-self: flex-end;
+	cursor: pointer;
+}
