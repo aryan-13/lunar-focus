@@ -4,7 +4,6 @@
 }
 .notes-heading {
 	padding: 1rem 0 2rem 0;
-
 	width: 60rem;
 	text-align: center;
 	font-size: 2.5rem;
@@ -12,7 +11,6 @@
 .note-box {
 	display: flex;
 	max-height: 20rem;
-	/* width: 25rem; */
 	width: 100%;
 	margin: 0 1rem;
 	flex-direction: column;
@@ -34,7 +32,7 @@
 
 .user-notes {
 	overflow-y: auto;
-	height: 46rem;
+	min-height: 46rem;
 	width: 60rem;
 	display: flex;
 	justify-content: center;
