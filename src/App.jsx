@@ -6,6 +6,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Timer from './Components/Timer/Timer';
 import Notes from './Components/MainSection/Notes/Notes';
 import Settings from './Components/MainSection/Settings/Settings';
+import ErrorPage from './Components/MainSection/ErrorPage';
 function Header() {
 	return (
 		<div className="header-container">
@@ -25,6 +26,7 @@ function App() {
 					<Route path="/" element={<TaskList />} />
 					<Route path="/notes" element={<Notes />} />
 					<Route path="/settings" element={<Settings />} />
+					<Route path="/profile" element={<ErrorPage />} />
 				</Routes>
 
 				<Timer />
