@@ -13,11 +13,11 @@
 	background-color: var(--color-grey-light-2);
 }
 .btn-primary {
-	background-color: var(--color-primary);
+	background-color: #54b6f7;
 	color: var(--color-white);
 }
 .btn-primary:hover {
-	background-color: #425dd6;
+	background-color: #1da3f7;
 }
 .btn-secondary {
 	background-color: var(--color-font);

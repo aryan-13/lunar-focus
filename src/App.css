@@ -17,9 +17,13 @@ img {
 	--color-primary: #5271ff;
 
 	--color-option-purple: #d5cae5;
+	--color-option-purple-hover: #c3b1dd;
 	--color-option-pink: #f592b3;
+	--color-option-pink-hover: #f27c9f;
 	--color-option-green: #96dab5;
+	--color-option-green-hover: #8ecb9f;
 	--color-option-blue: #92d3ff;
+	--color-option-blue-hover: #8eb8ff;
 	--color-font: #374151;
 
 	/* Btn Colors */

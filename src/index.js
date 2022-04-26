@@ -6,15 +6,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TasklistProvider } from './Context/tasklist-context';
 import { TimerProvider } from './Context/timer-context';
+import { NotesProvider } from './Context/notes-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<TasklistProvider>
-				<TimerProvider>
-					<App />
-				</TimerProvider>
+				<NotesProvider>
+					<TimerProvider>
+						<App />
+					</TimerProvider>
+				</NotesProvider>
 			</TasklistProvider>
 		</BrowserRouter>
 	</React.StrictMode>
