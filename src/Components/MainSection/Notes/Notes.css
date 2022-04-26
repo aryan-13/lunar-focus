@@ -3,7 +3,6 @@
 	height: 90vh;
 	display: flex;
 	flex-direction: column;
-	/* width: inherit; */
 }
 .notes-heading {
 	padding: 1rem 0 2rem 0;
@@ -46,7 +45,6 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
-	/* border: 1px solid black; */
 	padding: 1rem;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -63,7 +61,6 @@
 	cursor: pointer;
 }
 .note-text {
-	/* overflow-wrap: break-word; */
 	word-wrap: break-word;
 	width: 22rem;
 }
