@@ -15,15 +15,16 @@ function Sidebar() {
 					Notes
 				</div>
 			</Link>
-
 			<div className="sidebar-items option-3">
 				<i className="fas fa-user"></i>
 				Profile
 			</div>
-			<div className="sidebar-items option-4">
-				<i className="fas fa-cog"></i>
-				Settings
-			</div>
+			<Link to="/settings">
+				<div className="sidebar-items option-4">
+					<i className="fas fa-cog"></i>
+					Settings
+				</div>
+			</Link>
 		</div>
 	);
 }

@@ -1,0 +1,14 @@
+.setting-container {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+	align-items: center;
+}
+.settings-input {
+	width: 8rem;
+	font-size: 2rem;
+	background-color: var(--color-grey);
+	border-radius: 3px;
+	border: none;
+	padding: 1rem;
+}
