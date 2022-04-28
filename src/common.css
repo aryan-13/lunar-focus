@@ -26,3 +26,6 @@
 .btn-secondary:hover {
 	background-color: var(--color-black);
 }
+.u-margin-bottom-small {
+	margin-bottom: 1rem;
+}

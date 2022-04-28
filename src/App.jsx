@@ -5,6 +5,8 @@ import TaskList from './Components/MainSection/TaskList/TaskList';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Timer from './Components/Timer/Timer';
 import Notes from './Components/MainSection/Notes/Notes';
+import Settings from './Components/MainSection/Settings/Settings';
+import UnderDevPage from './Components/MainSection/UnderDevPage';
 function Header() {
 	return (
 		<div className="header-container">
@@ -23,6 +25,8 @@ function App() {
 				<Routes>
 					<Route path="/" element={<TaskList />} />
 					<Route path="/notes" element={<Notes />} />
+					<Route path="/settings" element={<Settings />} />
+					<Route path="/profile" element={<UnderDevPage />} />
 				</Routes>
 
 				<Timer />
