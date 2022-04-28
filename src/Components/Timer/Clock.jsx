@@ -27,7 +27,7 @@ function Clock({ type, key, setKey }) {
 					}
 					colors={[type === 'work' ? '#FCA5A5' : '#6EE7B7']}
 					strokeWidth={24}
-					size={300}
+					size={250}
 				>
 					{children}
 				</CountdownCircleTimer>

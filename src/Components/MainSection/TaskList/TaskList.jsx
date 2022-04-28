@@ -17,24 +17,26 @@ function TaskList() {
 	};
 	return (
 		<div className="main-section-container">
-			<input
-				className="input-bar"
-				placeholder="Click to quickly add a task"
-				onChange={(e) => taskHandler(e)}
-				value={task}
-			/>
-			<button
-				className="btn btn-grey"
-				onClick={() => {
-					tasklistDispatch({
-						type: 'ADD_TASK',
-						payload: { id: uuidv4(), name: task, isCompleted: false },
-					});
-					setTask('');
-				}}
-			>
-				Add
-			</button>
+			<div className="input-container">
+				<input
+					className="input-bar"
+					placeholder="Click to quickly add a task"
+					onChange={(e) => taskHandler(e)}
+					value={task}
+				/>
+				<button
+					className="btn btn-grey"
+					onClick={() => {
+						tasklistDispatch({
+							type: 'ADD_TASK',
+							payload: { id: uuidv4(), name: task, isCompleted: false },
+						});
+						setTask('');
+					}}
+				>
+					Add
+				</button>
+			</div>
 			<div className="task-list-container">
 				<div className="task-container">
 					<h2 className="task-heading">
