@@ -78,7 +78,6 @@ select:focus {
 	border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--color-tertiary-dark);
 }
@@ -92,8 +91,6 @@ select:focus {
 	max-width: 130rem;
 	max-height: 65rem;
 	flex-direction: column;
-	/* justify-content: center; */
-	/* align-items: center; */
 }
 @media (max-width: 1200px) {
 	html {

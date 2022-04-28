@@ -1,6 +1,6 @@
 import './TaskList.css';
 import '../../../common.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Task from './Task';
 import { useTasklist } from '../../../Context/tasklist-context';
@@ -15,6 +15,23 @@ function TaskList() {
 			setTask(e.target.value);
 		}
 	};
+
+	useEffect(() => {
+		if (tasklist.tasklistArr.length > 0 || tasklist.completedTasks.length > 0) {
+			localStorage.setItem('tasklist', JSON.stringify(tasklist));
+		} else {
+			localStorage.setItem(
+				'tasklist',
+				JSON.stringify({
+					tasklistArr: [],
+					completedTasks: [],
+					taskPending: 0,
+					tasksCompleted: 0,
+				})
+			);
+		}
+	}, [tasklist]);
+
 	return (
 		<div className="main-section-container">
 			<div className="input-container">
