@@ -1,6 +1,6 @@
 import './ErrorPage.css';
 
-function ErrorPage() {
+function UnderDevPage() {
 	return (
 		<div className="main-section-container notes-container error-page">
 			<h4 className="notes-heading">Under Construction🚧</h4>
@@ -8,4 +8,4 @@ function ErrorPage() {
 	);
 }
 
-export default ErrorPage;
+export default UnderDevPage;

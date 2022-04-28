@@ -10,8 +10,7 @@ function Settings() {
 	return (
 		<div className="main-section-container notes-container">
 			<h4 className="notes-heading">Settings⚙️</h4>
-			<br />
-			<br />
+			<div className="u-margin-bottom-small"></div>
 
 			<div className="setting-container">
 				<div className="settings-item">
@@ -20,12 +19,12 @@ function Settings() {
 						type="number"
 						className=" settings-input"
 						onChange={(e) => {
-							console.log(Number(e.target.value) < 0);
 							setWork(Number(e.target.value));
 						}}
 					/>
 				</div>
-				<br />
+				<div className="u-margin-bottom-small"></div>
+				<div className="u-margin-bottom-small"></div>
 				<button
 					className="btn btn-primary"
 					onClick={() => {
@@ -34,7 +33,8 @@ function Settings() {
 				>
 					Set Work Time
 				</button>
-				<br />
+				<div className="u-margin-bottom-small"></div>
+				<div className="u-margin-bottom-small"></div>
 
 				<div className="settings-item">
 					<label className="setting-label">Break(in Mins): </label>
@@ -45,7 +45,9 @@ function Settings() {
 						onChange={(e) => setBreakTime(Number(e.target.value))}
 					/>
 				</div>
-				<br />
+				<div className="u-margin-bottom-small"></div>
+				<div className="u-margin-bottom-small"></div>
+
 				<button
 					className="btn btn-primary"
 					onClick={() => {
