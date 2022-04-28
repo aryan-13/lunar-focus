@@ -9,9 +9,19 @@
 	border-radius: 1rem;
 }
 .header-text {
-	font-size: 2rem;
+	font-size: 2.5rem;
+	font-weight: bold;
 	padding-left: 3rem;
+}
+.heading-emoji {
+	font-size: 3rem;
 }
 .header-date {
 	font-size: 1.5rem;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 1rem;
+	border-left: 4px solid #1da3f7;
+	border-right: 3px solid #1da3f7;
+	background-color: var(--color-grey);
 }
