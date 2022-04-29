@@ -8,8 +8,8 @@ function TaskList() {
 	const [task, setTask] = useState('');
 	const { tasklist, tasklistDispatch } = useTasklist();
 	const taskHandler = (e) => {
-		if (e.target.value.length > 25) {
-			alert('Task cannot be more than 25 characters');
+		if (e.target.value.length > 25 || e.target.value.length < 1) {
+			alert('Task must be between 1 to 25 characters');
 			return;
 		} else {
 			setTask(e.target.value);
