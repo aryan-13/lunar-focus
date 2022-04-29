@@ -3,7 +3,11 @@ import { tasklistReducer } from '../Reducer/tasklistReducer';
 
 const TasklistContext = createContext();
 
-let initTasklist = JSON.parse(localStorage.getItem('tasklist'));
+let initTasklist = JSON.parse(
+	localStorage.getItem('tasklist') === null
+		? '{"tasklistArr":[],"completedTasks":[],"taskPending":0,"tasksCompleted":0}'
+		: localStorage.getItem('tasklist')
+);
 const TasklistProvider = ({ children }) => {
 	const [tasklist, tasklistDispatch] = useReducer(
 		tasklistReducer,
