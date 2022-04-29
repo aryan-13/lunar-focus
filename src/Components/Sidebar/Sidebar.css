@@ -2,13 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-white);
-	margin: 1.5rem;
+	margin: 1rem;
 	box-shadow: 0px 2px 6px -2px rgba(184, 179, 179, 0.49);
-	width: fit-content;
-	padding: 2rem 1rem;
+	padding: 1rem;
 	justify-content: center;
-	align-items: space-between;
-	height: fit-content;
 	border-radius: 1rem;
 }
 .sidebar-items {
@@ -17,12 +14,11 @@
 	row-gap: 1rem;
 	font-size: 2rem;
 	flex-direction: column;
-	padding: 2rem 1rem;
+	padding: 2rem 2rem;
 	color: white;
 	border-radius: 1rem;
 	margin: 1rem;
 	cursor: pointer;
-	/* background-color: lightgreen; */
 }
 .option-1 {
 	background-color: var(--color-option-pink);
@@ -55,4 +51,10 @@
 .option-2:hover {
 	background-color: var(--color-option-purple-hover);
 	transform: scale(1.04);
+}
+@media (max-width: 980px) {
+	.sidebar-container {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 }

@@ -1,6 +1,6 @@
 import './TaskList.css';
 import '../../../common.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Task from './Task';
 import { useTasklist } from '../../../Context/tasklist-context';
@@ -15,26 +15,45 @@ function TaskList() {
 			setTask(e.target.value);
 		}
 	};
+
+	useEffect(() => {
+		if (tasklist.tasklistArr.length > 0 || tasklist.completedTasks.length > 0) {
+			localStorage.setItem('tasklist', JSON.stringify(tasklist));
+		} else {
+			localStorage.setItem(
+				'tasklist',
+				JSON.stringify({
+					tasklistArr: [],
+					completedTasks: [],
+					taskPending: 0,
+					tasksCompleted: 0,
+				})
+			);
+		}
+	}, [tasklist]);
+
 	return (
 		<div className="main-section-container">
-			<input
-				className="input-bar"
-				placeholder="Click to quickly add a task"
-				onChange={(e) => taskHandler(e)}
-				value={task}
-			/>
-			<button
-				className="btn btn-grey"
-				onClick={() => {
-					tasklistDispatch({
-						type: 'ADD_TASK',
-						payload: { id: uuidv4(), name: task, isCompleted: false },
-					});
-					setTask('');
-				}}
-			>
-				Add
-			</button>
+			<div className="input-container">
+				<input
+					className="input-bar"
+					placeholder="Click to quickly add a task"
+					onChange={(e) => taskHandler(e)}
+					value={task}
+				/>
+				<button
+					className="btn btn-grey"
+					onClick={() => {
+						tasklistDispatch({
+							type: 'ADD_TASK',
+							payload: { id: uuidv4(), name: task, isCompleted: false },
+						});
+						setTask('');
+					}}
+				>
+					Add
+				</button>
+			</div>
 			<div className="task-list-container">
 				<div className="task-container">
 					<h2 className="task-heading">

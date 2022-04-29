@@ -78,16 +78,34 @@ select:focus {
 	border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--color-tertiary-dark);
 }
 .mid-section {
 	display: flex;
+	max-width: 130rem;
+	max-height: 65rem;
+}
+.App {
+	display: flex;
+	max-width: 130rem;
+	max-height: 65rem;
+	flex-direction: column;
+}
+@media (max-width: 1200px) {
+	html {
+		font-size: 48%;
+	}
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 980px) {
 	html {
 		font-size: 43.75%;
+	}
+	.mid-section {
+		flex-direction: column;
+	}
+	.sidebar-container {
+		flex-direction: row;
 	}
 }
